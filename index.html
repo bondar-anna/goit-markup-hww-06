@@ -544,13 +544,15 @@
             </div>
           </div>
           <div class="contacts-form-field-wrap-comment">
-            <label for="user-comment" class="form-label">Comment</label>
+            <label class="form-label" for="user-comment"> Comment </label>
             <textarea
-              id="user-comment"
-              name="user-comment"
-              placeholder="Text input"
               class="contacts-form-comment"
-            ></textarea>
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            >
+            </textarea>
           </div>
           <div class="contacts-form-field-wrap-checkbox">
             <input
@@ -567,10 +569,8 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span class="modal-checkbox-part">
-                I accept the terms and conditions of the
-                <a class="modal-checkbox-link" href="">Privacy Policy</a>
-              </span>
+              I accept the terms and conditions of the
+              <a class="modal-checkbox-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="contacts-form-btn" type="submit">Send</button>
@@ -579,6 +579,5 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
   </body>
 </html>
